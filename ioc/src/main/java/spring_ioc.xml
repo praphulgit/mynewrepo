@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+	
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+    http://www.springframework.org/schema/context  
+    http://www.springframework.org/schema/context/spring-context-4.0.xsd ">
+
+
+	<bean id="add" class="com.spring.ioc.Address">
+		<constructor-arg value="NCR "></constructor-arg>
+		<constructor-arg value="Noida"></constructor-arg>
+
+	</bean>
+
+	<bean id="acc1" class="com.spring.ioc.Account">
+		<property name="accnum" value="11111"></property>
+		<property name="atype" value="SA"></property>
+		<property name="bal" value="100000.00"></property>
+	</bean>
+
+
+	<bean id="acc2" class="com.spring.ioc.Account">
+		<property name="accnum" value="22222"></property>
+		<property name="atype" value="SA"></property>
+		<property name="bal" value="200000.00"></property>
+	</bean>
+
+	<bean id="acc3" class="com.spring.ioc.Account">
+		<property name="accnum" value="33333"></property>
+		<property name="atype" value="CA"></property>
+		<property name="bal" value="3500000.00"></property>
+	</bean>
+
+	<bean id="cust" class="com.spring.ioc.Customer">
+		<constructor-arg value="103"></constructor-arg>
+		<constructor-arg value="praphul"></constructor-arg>
+		<constructor-arg value="praphul@renovite"></constructor-arg>
+		<constructor-arg value="98712245678"></constructor-arg>
+
+		<property name="emails">
+			<list>
+				<value>aaaa@renovite</value>
+				<value>bbbb@renovite</value>
+				<value>cccc@renovite</value>
+			</list>
+		</property>
+
+		<property name="phones">
+			<set>
+				<value>11111111</value>
+				<value>22222222</value>
+				<value>33333333</value>
+			</set>
+		</property>
+
+		<property name="refs">
+			<map>
+				<entry key="AA" value="11"></entry>
+				<entry key="BB" value="22"></entry>
+				<entry key="CC" value="33"></entry>
+
+			</map>
+		</property>
+
+		<property name="myprops">
+			<props>
+				<prop key="AA">11</prop>
+				<prop key="BB">22</prop>
+				<prop key="CC">33</prop>
+
+			</props>
+		</property>
+
+		<property name="address" ref="add"></property>
+
+		<property name="accounts">
+			<list>
+				<ref bean="acc1" />
+				<ref bean="acc2" />
+				<ref bean="acc3" />
+			</list>
+
+		</property>
+
+	</bean>
+</beans>  

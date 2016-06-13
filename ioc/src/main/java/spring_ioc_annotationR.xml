@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans   
+	
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+    http://www.springframework.org/schema/context  
+    http://www.springframework.org/schema/context/spring-context-4.0.xsd ">
+
+	<context:annotation-config />
+	
+	<!-- <context:component-scan base-package="com.spring.ioc.anotattion" />
+ -->
+ 	<bean id="ao" class="com.spring.ioc.anotattion.ResourceA" p:a="1112" p:msg="AAAAR">
+	</bean>
+	
+	<bean id="ao1" class="com.spring.ioc.anotattion.ResourceA" p:a="112" p:msg="AAR">
+	</bean> 
+
+	<bean id="bo" class="com.spring.ioc.anotattion.ResourceB">
+		<constructor-arg value="2011" />
+		<constructor-arg value="BBBR" />
+	</bean>
+	
+	<bean id="bo2" class="com.spring.ioc.anotattion.ResourceB">
+		<constructor-arg value="3011" />
+		<constructor-arg value="BBB" />
+	</bean>
+	
+
+	<bean id="reshello" class="com.spring.ioc.anotattion.ResourceAHello"></bean>
+
+
+</beans>
+    
