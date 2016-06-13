@@ -1,4 +1,4 @@
-
+praphul
 Now install git in ubuntu type command on your terminal
 
 
