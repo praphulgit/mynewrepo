@@ -1,0 +1,82 @@
+
+Now install git in ubuntu type command on your terminal
+
+
+amresh@amresh-Vostro-3446:~$ sudo apt-get install git
+[sudo] password for amresh:
+
+ Now give permission  ==================================================
+
+Do you want to continue? [Y/n] y
+
+
+Now type following two command on your  terminal=============================
+
+amresh@amresh-Vostro-3446:~$ git config --global user.name "amresh087"
+amresh@amresh-Vostro-3446:~$ git config --global user.email
+
+Now  check you directory location ==============================================
+
+amresh@amresh-Vostro-3446:~$ pwd
+/home/amresh
+
+Now you create one directoy=================================================
+
+amresh@amresh-Vostro-3446:~$ mkdir gittest
+
+go to your diectory=========================================================
+
+amresh@amresh-Vostro-3446:~$ cd gittest
+
+Now initilazie your git=======================================================
+amresh@amresh-Vostro-3446:~/gittest$ git init
+
+Now connect remote repository ================================================
+amresh@amresh-Vostro-3446:~/gittest$ git remote add origin https://github.com/amresh087/testme.git
+
+Now  create file for adding in repository===================
+
+amresh@amresh-Vostro-3446:~/gittest$ gedit README
+
+Now add file===============
+amresh@amresh-Vostro-3446:~/gittest$ git add README
+
+Now add all file present all file in directory
+amresh@amresh-Vostro-3446:~/gittest$ git add .
+
+Now commit the file in github repository=======
+amresh@amresh-Vostro-3446:~/gittest$ git commit -m 'first commit'
+
+
+
+Now push the file ========================
+
+
+amresh@amresh-Vostro-3446:~/gittest$ git push origin master
+Username for 'https://github.com': amresh087
+Password for 'https://amresh087@github.com': amresh12345
+
+Now create new file password and update file =========================
+
+
+
+amresh@amresh-Vostro-3446:~/gittest$ gedit password
+amresh@amresh-Vostro-3446:~/gittest$ gedit README
+Now add all file   =========================
+
+amresh@amresh-Vostro-3446:~/gittest$ git add .
+
+Now commit file ======================
+
+amresh@amresh-Vostro-3446:~/gittest$ git commit -m 'second commit -added password and chnage readme'
+
+
+Now push file to remote repository ==========
+amresh@amresh-Vostro-3446:~/gittest$ git push origin master
+Username for 'https://github.com': amresh087
+Password for 'https://amresh087@github.com':
+
+
+
+
+
