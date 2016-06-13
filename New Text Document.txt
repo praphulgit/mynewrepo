@@ -1,4 +1,4 @@
-praphul  git hub details
+praphul  git hub details ;-==========================================
 
 url :- https://github.com/praphulgit/mynewrepo
 user name -praphulgit
@@ -33,7 +33,7 @@ step 6
 
 -refresh get[https://github.com/praphulgit/mynewrepo] get update files
 
-
+===========================================================
 Now install git in ubuntu type command on your terminal
 
 
